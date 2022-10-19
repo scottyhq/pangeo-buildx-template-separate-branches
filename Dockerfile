@@ -1,1 +1,1 @@
-FROM ghcr.io/scottyhq/pangeo-buildx-template:image
+FROM ghcr.io/scottyhq/pangeo-buildx-template:124b337
