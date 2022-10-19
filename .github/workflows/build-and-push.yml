@@ -23,7 +23,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags:
+          tags: |
             type=sha,prefix=,format=short
 
       - name: Login to GitHub Packages
@@ -40,5 +40,6 @@ jobs:
           file: https://raw.githubusercontent.com/scottyhq/pangeo-buildx/main/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
