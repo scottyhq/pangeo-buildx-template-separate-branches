@@ -1,10 +1,14 @@
 # pangeo-buildx-template
-test binderhub integration
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/scottyhq/pangeo-buildx-template/HEAD?urlpath=lab)
+docker image definition using https://github.com/scottyhq/pangeo-buildx 
 
-https://mybinder.org/v2/gh/scottyhq/pangeo-buildx-template/HEAD?urlpath=lab
+files recognized by repo2docker spec:
 
-nbgitpuller:
+https://repo2docker.readthedocs.io/en/latest/specification.html
+```
+apt.txt
+environment.yml
+postBuild
+start
+```
 
-https://mybinder.org/v2/gh/scottyhq/pangeo-buildx-template/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fpangeo-data%252Fcog-best-practices%26urlpath%3Dlab%252Ftree%252Fcog-best-practices%252F%26branch%3Dmain
